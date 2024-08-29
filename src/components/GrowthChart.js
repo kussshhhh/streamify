@@ -37,7 +37,7 @@ const GrowthChart = () => {
                     tick={{fill: '#888888', fontSize: 12}}
                 />
                 <Tooltip
-                    contentStyle={{backgroundColor: '#f8f8f8', border: 'none', borderRadius:'5px', boxShadow: '0 2px 5px rgba(0,0,0,0,1)'}}
+                    contentStyle={{backgroundColor: '#f8f8f8', border: 'none', borderRadius:'5px', boxShadow: '0 2px 5px rgba(0,0,0,0.1)'}}
                 />
                 <Legend
                     wrapperStyle={{paddingTop: '20px'}}

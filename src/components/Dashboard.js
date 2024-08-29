@@ -7,12 +7,12 @@ import EnhancedTopStreamedSongsChart from "./StreamedSongs"
 
 const Dashboard = () => {
     return (
-      <>
+      <div className="dashboard">
         <KeyMetrics/>
         <GrowthChart/>
         <RevenueChart/>
         <EnhancedTopStreamedSongsChart/>
-      </>
+      </div>
     )
 }
 

@@ -25,37 +25,38 @@ const renderCustomizedLabel = ({cx, cy, midAngle, innerRadius, outerRadius, perc
 
 const RevenueChart = () => {
    return (
-        <ResponsiveContainer width="100%" height={400} >
-            <PieChart>
-                <Pie
-                    data={data}
-                    cx="50%"
-                    cy="50%"
-                    labelLine={false}
-                    label={renderCustomizedLabel}
-                    outerRadius={150}
-                    fill="#8884d8"
-                    dataKey="value"
-                >
-                    {data.map((entry, index) => (
-                        <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]}/>
-                    )) }
-                </Pie>
-                <Tooltip
-                    contentStyle={{backgroundColor: '#f8f8f8', border: 'none', borderRadius: '5px', boxShadow: '0 2px 5px rgba(0,0,0,0.1)'           }}
-                    formatter={(value) => new Intl.NumberFormat('en-US', {style:'currency', currency:'USD'}).format(value)}
-                />
-
-                <Legend
-                    layout="vertical"
-                    align="right"
-                    verticalAlign="middle"
-                    wrapperStyle={{paddingLeft:'20px'}}
-                />
-         
-            </PieChart>
-        </ResponsiveContainer>
-
+        <div className="chart-container revenue-distribution-chart">
+            <ResponsiveContainer width="100%" height={400} >
+                <PieChart>
+                    <Pie
+                        data={data}
+                        cx="50%"
+                        cy="50%"
+                        labelLine={false}
+                        label={renderCustomizedLabel}
+                        outerRadius={150}
+                        fill="#8884d8"
+                        dataKey="value"
+                    >
+                        {data.map((entry, index) => (
+                            <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]}/>
+                        )) }
+                    </Pie>
+                    <Tooltip
+                        contentStyle={{backgroundColor: '#f8f8f8', border: 'none', borderRadius: '5px', boxShadow: '0 2px 5px rgba(0,0,0,0.1)'           }}
+                        formatter={(value) => new Intl.NumberFormat('en-US', {style:'currency', currency:'USD'}).format(value)}
+                    />
+    
+                    <Legend
+                        layout="vertical"
+                        align="right"
+                        verticalAlign="middle"
+                        wrapperStyle={{paddingLeft:'20px'}}
+                    />
+             
+                </PieChart>
+            </ResponsiveContainer>
+        </div>
    ) 
 }
 

@@ -6,7 +6,7 @@ const Card = ({title, number}) => {
 
 
     return (
-        <div id="card">
+        <div id="metric-card">
             <h2>{title}</h2>
             <text>{number}</text>
         </div>

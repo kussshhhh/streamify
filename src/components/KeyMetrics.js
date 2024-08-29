@@ -3,7 +3,7 @@ import Card from "./Card";
 
 const KeyMetrics = () => {
     return (
-        <div id="key-metrics">
+        <div className="key-metrics">
             <Card title="Total Users" value = {1234567}/ >
             <Card title="Active Users" value = {1000302}/ >
             <Card title="Total Streams" value ={7439284739}/>

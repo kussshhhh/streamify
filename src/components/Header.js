@@ -2,7 +2,9 @@ import React from "react";
 
 const Header = () => {
     return (
-        <h1 className="header">Streamify Analytics Dashboard</h1>
+        <div className="heh">
+            <h1 className="header">Streamify Analytics Dashboard</h1>
+        </div>
     )
 }
 

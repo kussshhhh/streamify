@@ -2,11 +2,11 @@ import React from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 const data = [
-  { name: 'Song A', streams: 500000 },
-  { name: 'Song B', streams: 450000 },
-  { name: 'Song C', streams: 400000 },
-  { name: 'Song D', streams: 350000 },
-  { name: 'Song E', streams: 300000 },
+  { name: 'Despacito', streams: 500000 },
+  { name: 'What Do You Mean', streams: 450000 },
+  { name: 'Chandellier', streams: 400000 },
+  { name: 'Just Awake', streams: 350000 },
+  { name: 'Attention', streams: 300000 },
 ];
 
 const CustomTooltip = ({ active, payload, label }) => {
@@ -50,7 +50,7 @@ const EnhancedTopStreamedSongsChart = () => {
           <defs>
             <linearGradient id="colorStreams" x1="0" y1="0" x2="0" y2="1">
               <stop offset="5%" stopColor="#8884d8" stopOpacity={0.8}/>
-              {/* <stop offset="95%" stopColor="#8884d8" stopOpacity={0.1}/> */}
+              <stop offset="95%" stopColor="#8884d8" stopOpacity={0.1}/>
             </linearGradient>
           </defs>
           <Bar

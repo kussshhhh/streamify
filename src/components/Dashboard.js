@@ -3,6 +3,7 @@ import KeyMetrics from "./KeyMetrics";
 import GrowthChart from "./GrowthChart";
 import RevenueChart from "./PieChart";
 import EnhancedTopStreamedSongsChart from "./StreamedSongs"
+import DataTable from "./DataTable";
 
 
 const Dashboard = () => {
@@ -12,6 +13,7 @@ const Dashboard = () => {
         <GrowthChart/>
         <RevenueChart/>
         <EnhancedTopStreamedSongsChart/>
+        <DataTable/>
       </div>
     )
 }
